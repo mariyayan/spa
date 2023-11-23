@@ -1,0 +1,366 @@
+#treatments-img-container {
+    width: 355px;
+    height: 535px;
+    min-width: 355px;
+    min-height: 535px;
+    max-width: 355px;
+    max-height: 535px;
+    position: relative;
+}
+
+#treatment-types {
+    width: 65%;
+}
+
+#treatment-types>div {
+    border-top: solid rgb(200, 200, 200) 1px;
+    width: 45%;
+}
+
+#treatment-types>div:last-child {
+    flex-grow: 3;
+    border: none;
+}
+
+#treatment-types>div>h6 {
+    letter-spacing: 1px;
+}
+
+#testimonials-flex-container div {
+    width: 30%;
+}
+
+#testimonials-flex-container>div>div {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: 330px;
+    min-height: 330px;
+    max-height: 330px;
+    margin-bottom: 40px;
+}
+
+#testimonials-flex-container p:nth-of-type(1) {
+    color: black;
+    font-size: 21px;
+}
+
+#testimonials-flex-container p:nth-of-type(2) {
+    letter-spacing: 1px;
+    color: rgb(20, 105, 46);
+    font-size: 18px;
+}
+
+#relax>div>div:nth-of-type(1) {
+    width: 45%;
+}
+
+#relax>div>div:last-child {
+    position: relative;
+    width: 650px;
+    min-width: 650px;
+    max-width: 650px;
+    height: 450px;
+    min-height: 450px;
+    max-height: 450px;
+}
+
+#make-reservation-container {
+    padding: 100px 0;
+    background-image: url('../img/08.webp');
+    background-size: cover;
+}
+
+#make-reservation-container>div {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#products-arrows {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+#products-arrow-left,
+#products-arrow-right {
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#products-arrow-left:hover,
+#products-arrow-right:hover {
+    cursor: pointer;
+    background-color: rgb(20, 105, 46);
+    color: white;
+}
+
+#products-arrow-left {
+    margin-right: 20px;
+}
+
+#products-container-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: calc((250px * 4) + 90px);
+}
+
+#products>div:nth-of-type(2) {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#products-container {
+    width: calc((250px + 30px) * 6);
+    display: flex;
+    flex-direction: row;
+}
+
+#locations .boxes-wrapper a {
+    display: inline-block;
+}
+
+#locations .boxes-wrapper a:nth-of-type(1) {
+    margin-bottom: 12px;
+}
+
+#locations .contacts-over-section {
+    top: calc(-650px/5);
+    z-index: 3;
+}
+
+#locations-img {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 850px;
+    min-height: 850px;
+    max-height: 850px;
+}
+
+#news>div:nth-of-type(1) {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#news>div:nth-of-type(1)>div:nth-of-type(1) {
+    flex-basis: 25%;
+}
+
+#news>div:nth-of-type(1)>div:nth-of-type(1)>h2 {
+    text-align: center;
+}
+
+#news>div:nth-of-type(1)>div:nth-of-type(2) {
+    padding: 0 30px;
+    margin-top: 0;
+}
+
+#news>div:nth-of-type(2)>article {
+    width: 45%;
+}
+
+#news>div:nth-of-type(2)>article>a>div {
+    position: relative;
+    width: 550px;
+    min-width: 550px;
+    max-width: 550px;
+    height: 350px;
+    min-height: 350px;
+    max-height: 350px;
+}
+
+#news>div:nth-of-type(2)>article>a>h4 {
+    margin: 30px 0;
+    color: black;
+}
+
+#news>div:nth-of-type(2)>article>a:hover>h4 {
+    color: rgb(20, 105, 46);
+}
+
+#news>div:nth-of-type(2)>article>a>time {
+    color: rgb(100, 100, 100);
+}
+
+#news>div:nth-of-type(2)>article>a>span {
+    float: right;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #treatments-flex-container {
+        flex-direction: column;
+    }
+
+    #treatments-img-container {
+        order: 2;
+        width: 290px;
+        min-width: 290px;
+        max-width: 290px;
+        height: 430px;
+        min-height: 430px;
+        max-height: 430px;
+        align-self: center;
+    }
+
+    #treatment-types {
+        margin-bottom: 90px;
+        width:95%;
+    }
+
+    #treatment-types>div {
+        margin-bottom: 50px;
+    }
+
+    #treatment-types>div:last-child {
+        text-align: center;
+    }
+
+
+    #testimonials-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials-flex-container>div {
+        margin-bottom: 70px;
+        width: 70%;
+    }
+
+    #testimonials-flex-container>div>div {
+        position: relative;
+        margin: 0 auto 60px auto;
+    }
+
+    #testimonials-flex-container p {
+        text-align: center;
+    }
+
+    #relax>div:nth-of-type(1) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #relax>div>div {
+        width: 100%;
+    }
+
+    #relax>div>div:first-child {
+        margin-bottom: 100px;
+    }
+
+    #relax .btns-container{
+        text-align: center;
+    }
+
+    #relax .btns-container>a:nth-of-type(1){
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    #make-reservation-container>div {
+        width: 90%;
+    }
+
+    #products>div:nth-of-type(2) {
+        width: 95%;
+    }
+
+    #products-container-wrapper {
+        width: calc(220px * 3 + 60px);
+    }
+
+    #products-container {
+        width: calc((220px + 30px) * 6);
+    }
+
+    #locations-img {
+        height: 500px;
+        min-height: 500px;
+        max-height: 500px;
+    }
+
+    #news>div:nth-of-type(1) {
+        flex-direction: column;
+    }
+
+    #news>div:nth-of-type(2)>article {
+        width: 47%;
+    }
+
+    #news>div:nth-of-type(2)>article>a>div {
+        width: 330px;
+        min-width: 330px;
+        max-width: 330px;
+        height: 230px;
+        min-height: 230px;
+        max-height: 230px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #treatment-types {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    #treatment-types>div {
+        width: 100%;
+    }
+
+    #treatment-types div:last-child {
+        border: none;
+        text-align: center;
+    }
+
+    #testimonials-flex-container>div {
+        width: 80%;
+    }
+
+ #relax > div > div:first-child{
+    width: 90%;
+ }
+
+    #relax>div>div:last-child {
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        height: 250px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    #products-container-wrapper {
+        width: 330px;
+    }
+
+    #products-container {
+        width: calc(330px * 6);
+    }
+
+    #locations  .contacts-over-section-wrapper{
+        margin-top: calc(690px / 2);
+    }
+
+    #locations-img {
+        width: 95%;
+        height: 600px;
+        min-height: 600px;
+        max-height: 600px;
+    }
+
+    #news > div:nth-of-type(2) > article{
+        width: 95%;
+    }
+
+    #news article:nth-of-type(1) {
+        margin-bottom: 80px;
+    }
+}

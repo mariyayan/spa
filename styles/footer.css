@@ -1,0 +1,125 @@
+#instagram-container .decoration-line {
+    margin: 0;
+}
+
+#instagram-container>div:nth-of-type(1) {
+    align-self: center;
+    flex-basis: 30%;
+}
+
+#instagram-container>div:nth-of-type(2) {
+    width: 400px;
+    justify-content: end;
+}
+
+#instagram-container>div:nth-of-type(2)>div {
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+#instagram-container>div:nth-of-type(2)>div>a>span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+
+#instagram-container>div:nth-of-type(2)>div:hover>a>span {
+    opacity: 1;
+}
+
+#instagram-container>div:nth-of-type(2)>div:hover>img {
+    filter: opacity(50%);
+}
+
+#footer-content {
+    padding-top: calc(650px / 2 / 2 + 150px);
+}
+
+.contacts-over-section {
+    height: calc(650px/2);
+    top: calc(-650px/2/2);
+}
+
+footer>div:last-child>ul>li {
+    margin-bottom: 10px;
+}
+
+footer>div:last-child>ul>li>a {
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+
+footer>div:last-child>ul>li>a:hover {
+    color: rgb(20, 105, 46);
+}
+
+@media screen and (max-width: 1200px) {
+    #instagram-container>div:nth-of-type(1) {
+        flex-basis: 35%;
+    }
+
+    #footer-content {
+        padding-top: calc(500px / 2 / 2 + 100px)
+    }
+
+    footer {
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #instagram-container>div:nth-of-type(1)>div:nth-of-type(2) {
+        text-align: center;
+    }
+
+    #instagram-container>div:nth-of-type(1)>div:nth-of-type(2)>a {
+        width: 100%;
+    }
+
+    #instagram-container>div:nth-of-type(1) {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    #instagram-container>div:nth-of-type(2) {
+        width: 300px;
+        height: 450px;
+    }
+
+    #instagram-container>div:nth-of-type(2)>div {
+        height: 170px;
+        min-height: 170px;
+        max-height: 170px;
+        position: relative;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+    }
+
+    #footer-content {
+        padding-top: calc(690px / 2 + 100px);
+        height: auto;
+    }
+
+    footer>div:first-child {
+        margin-bottom: 70px;
+    }
+
+    footer>div:first-child {
+        text-align: center;
+    }
+}
